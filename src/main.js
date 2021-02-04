@@ -11,5 +11,6 @@ Vue.use(Router)
  })
 
 new Vue({
+  router: routing,
   render: h => h(App)
 }).$mount('#app')
