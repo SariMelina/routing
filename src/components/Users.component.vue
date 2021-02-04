@@ -8,6 +8,7 @@
                 {{ user.name }}
             </li>
         </ul>
+        <router-view/>
     </div>
 </template>
 
