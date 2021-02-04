@@ -18,7 +18,7 @@ export default {
     }, 
     created () {
         let id = this.$route.params.id
-        this.$http.get('https://jsonplaceholder.typicode.com/users'+id)
+        this.$http.get('https://jsonplaceholder.typicode.com/users/'+id)
         .then(resp => {
             return resp.json()
         }).then(user => {
