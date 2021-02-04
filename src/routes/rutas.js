@@ -5,5 +5,7 @@ import InfoUser from '../components/InfoUser.component.vue'
 export const rutas = [
     { path: '', component: HomeComponent },
     { path: '/users', component: UsersComponent},
-    { path: '/users/:id', component: InfoUser , name: 'infoUser' }    
+    { path: '/users/:id', component: InfoUser , name: 'infoUser' },    
+    { path: '/usuarios', redirect:'/users' },    
+    { path: '*', redirect:'/' }    
 ]
