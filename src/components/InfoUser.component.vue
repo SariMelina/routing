@@ -5,6 +5,8 @@
             <p><strong>Nombre:</strong> {{ nombre }}</p>
             <p><strong>Email:</strong> {{ email }}</p>
         </div>
+        <button class="btn btn-primary"
+        @click="volver()">Volver</button>
     </div>
 </template>
 
@@ -37,6 +39,11 @@ export default {
             this.nombre = user.name,
             this.email = user.email
         })
+    },
+    methods: {
+        volver () {
+            this.$router.push('/users')
+        }
     }
 }
 </script>
