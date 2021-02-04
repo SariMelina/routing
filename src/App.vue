@@ -2,7 +2,7 @@
   <div class="container">
     <Header/>
     <div class="jumbotron">
-      
+      <router-view/>
     </div>
   </div>
 </template>
