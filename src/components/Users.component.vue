@@ -2,11 +2,12 @@
     <div>
         <p>Lista de usuarios</p>
         <ul class="list-group">
-            <span>ID: {{ id }}</span>
-            <li class="list-group-item"
+           <!--  <span>ID: {{ id }}</span> -->
+            <router-link tag="li" :to="{name:'infoUser', params:{ id:user.id }}"
+            class="list-group-item"
             v-for="(user, index) in users" :key="index">
                 {{ user.name }}
-            </li>
+            </router-link>
         </ul>
         <router-view/>
     </div>
