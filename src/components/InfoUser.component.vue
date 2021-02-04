@@ -16,7 +16,7 @@ export default {
             email: ''
         }
     }, 
-    watch : {
+    /* watch : {
         $route() {
             let id = this.$route.params.id
             this.$http.get('https://jsonplaceholder.typicode.com/users/'+id)
@@ -27,7 +27,7 @@ export default {
                 this.email = user.email
             })
         }
-    },
+    }, */
     created () {
         let id = this.$route.params.id
         this.$http.get('https://jsonplaceholder.typicode.com/users/'+id)
