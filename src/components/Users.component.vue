@@ -2,6 +2,7 @@
     <div>
         <p>Lista de usuarios</p>
         <ul class="list-group">
+            <span>ID: {{ id }}</span>
             <li class="list-group-item"
             v-for="(user, index) in users" :key="index">
                 {{ user.name }}
@@ -14,7 +15,8 @@
 export default {
     data(){
       return {
-          users : {}
+          users : {},
+          id : this.$route.params.id
       } 
     },
    created () {
