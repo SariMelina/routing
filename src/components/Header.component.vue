@@ -3,10 +3,10 @@
         <nav>
             <ul class="nav nav-pills pull-right">
                 <li>
-                    <a href="">Inicio</a>
+                    <router-link to="/">Inicio</router-link>
                 </li>
                 <li>
-                    <a href="">Usuarios</a>
+                    <router-link to="/users">Usuarios</router-link>
                 </li>
             </ul>
             <h3 class="text muted">Aplicación Usuarios</h3>
