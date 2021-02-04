@@ -16,6 +16,18 @@ export default {
             email: ''
         }
     }, 
+    watch : {
+        $route() {
+            let id = this.$route.params.id
+            this.$http.get('https://jsonplaceholder.typicode.com/users/'+id)
+            .then(resp => {
+                return resp.json()
+            }).then(user => {
+                this.nombre = user.name,
+                this.email = user.email
+            })
+        }
+    },
     created () {
         let id = this.$route.params.id
         this.$http.get('https://jsonplaceholder.typicode.com/users/'+id)
